@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="static/css/contador.css" media="screen" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css">
+    <title>CONTAGEM</title>
+</head>
+<body>
+    <div class="login" id="login">
+        <div class="cabecario" id="caberacio">
+            <h1>LOGIN</h1>
+        </div>
+        <span class="input usuario" id="inpusuario">
+            <label class="ipla" for="usuario">Usuário</label>
+            <input id="user" type="text" name="usuario" oninput="verificarInput()">
+        </span>
+        <span class="input senha" id="inpsenha">
+            <label class="ipla" for="senha">Senha</label>
+            <input id="pwd" type="password" name="senha" oninput="verificarInput()">
+        </span>
+        <span class="iconlogin" id="iconlogin">
+            <i class="bi bi-box-arrow-in-right"></i>
+        </span>
+    </div>
+
+    <div class="main" id="main">
+        <div class="painel" id="painel">
+            <div class="cabecario-painel" id="cabecario-painel">
+                <img src="static/img/logo simbolo vermelho.png" width="40px" height="40px">
+                <h3>LOJA</h3>
+            </div>
+            <div class="divisoria"></div>
+        </div>
+        <div class="coleta" id="coleta">
+            <label for="codBarra">CÓDIGO</label>
+            <input type="text" id="codbarra" name="codBarra">
+        </div>
+    </div>
+    <script type="text/javascript" src="static/js/contador.js"></script>
+</body>
+</html>
