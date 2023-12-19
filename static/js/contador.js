@@ -25,11 +25,19 @@ btnlogin.addEventListener('click', () => {
 codbarra = document.querySelector('#codbarra')
 
 function addLinhaTab(){
+
+    banco = {
+        7622210575630: 'CHOCOLATE DIAMANTE',
+        9788576089728: 'LIVRO DATA SCIENCE'
+
+    }
+
     var tabela = document.querySelector("#tabela-contagem")
     var linha = tabela.insertRow(1)
     var c0 = linha.insertCell(0)
     var c1 = linha.insertCell(1)
     var c2 = linha.insertCell(2)
+    var c3 = linha.insertCell(3)
 
 
     linha.style.color = 'white'
@@ -44,7 +52,19 @@ function addLinhaTab(){
 
     c0.innerHTML = 1
     c1.innerHTML = codbarra.value
-    c2.innerHTML = 1
+
+    for (cod in banco){
+        if(document.querySelector('#codbarra').value === cod){
+            c2.innerHTML = banco[cod]
+        }
+    }
+ 
+    if (document.querySelector('#ckQTD').checked){
+        document.querySelector('.inf-qtd').style.display = 'flex'
+        c3.innerHTML = 25
+    } else {
+        c3.innerHTML = 1    
+    }
 
 }
 
