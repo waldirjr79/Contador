@@ -31,9 +31,16 @@ function addLinhaTab(){
     var c1 = linha.insertCell(1)
     var c2 = linha.insertCell(2)
 
-    linha.style.backgroundColor = '#141414'
+
     linha.style.color = 'white'
     linha.style.heigth = '15px'
+
+    ultima_ln = tabela.rows.length
+    if (ultima_ln % 2 === 0){
+        linha.style.backgroundColor = '#141414'
+    } else {
+        linha.style.backgroundColor = '#1a1a1a'
+    }
 
     c0.innerHTML = 1
     c1.innerHTML = codbarra.value
