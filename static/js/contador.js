@@ -45,7 +45,7 @@ function addLinhaTab(){
     c0.innerHTML = 1
     c1.innerHTML = codbarra.value
     c2.innerHTML = 1
-    console.log(codbarra.value)
+
 }
 
 codbarra.addEventListener('keydown', function(event) {

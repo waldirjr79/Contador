@@ -18,4 +18,4 @@ def contador():
 
 
 if __name__ == '__main__':
-    app.run(debug=True, host='192.168.1.16', port='8501')
+    app.run(debug=True, host='10.0.3.101', port='8501')
